@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: intro;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #f0dc4e;
+  }
+}
+
+body {
+  background-image: url(./assets/doodle_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f0dc4e;
+}
+
+.search_container {
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.search_container h1 {
+  font-size: 48px;
+}
+
+.search_inner_div {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search_inner_div input {
+  border: 1px solid #9d9132;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.search_inner_div input::placeholder {
+  color: #ffffff7c;
+}
+
+.search_inner_div input:focus {
+  background-color: #9d9132;
+  transition: all 0.3s;
+}
+
+.search_inner_div button {
+  display: flex;
+  border: none;
+  background-color: #f0dc4e;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #000;
+}
+
+.search_inner_div button:hover {
+  background-color: #9d9132;
+  transition: all 0.3s;
+}
+
+.sticker_container {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.card {
+  width: 24%;
+  border: 2px solid #f0dc4e;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card:hover {
+  transition: all 0.3s;
+  box-shadow: 0px 0px 16px 6px #f0dc4e;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card a {
+  color: #f0dc4e;
+}
+
+.card a:hover {
+  transition: all 0.3s;
+  color: #9d9132;
+}
+
+.card div {
+  padding: 10px;
+}
+
+.sticker_container p {
+  color: #f0dd4eca;
+  margin-top: 100px;
+  font-style: italic;
+  text-align: justify;
+}
